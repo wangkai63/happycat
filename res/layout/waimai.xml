@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/mo"
+        android:layout_weight="1.2"
+        android:orientation="horizontal" >
+
+        <!-- 顶部的标题栏 -->
+
+        <RelativeLayout
+            style="@style/mm"
+            android:background="#06c1ad" >
+
+            <ImageButton
+                android:id="@+id/photo"
+                style="@style/ww"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/left"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp" />
+            <!-- android:src="@drawable/left" -->
+
+            <TextView
+                style="@style/ww"
+                android:layout_centerInParent="true"
+                android:text="夜猫外卖"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/tongzhi"
+                style="@style/ww"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:src="@drawable/search" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/mo"
+        android:layout_weight="4"
+        android:background="#f2f2f2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/mo"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/waimai_group"
+                style="@style/mm"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/ppkc"
+                    style="@style/wmd"
+                    android:layout_marginRight="1dp"
+                    android:background="#fff"
+                    android:checked="false"
+                    android:drawableTop="@drawable/b1"
+                    android:text="品牌快餐" />
+
+                <RadioButton
+                    android:id="@+id/zc"
+                    style="@style/wmd"
+                    android:layout_marginRight="1dp"
+                    android:background="#fff"
+                    android:drawableTop="@drawable/b2"
+                    android:text="正餐" />
+
+                <RadioButton
+                    android:id="@+id/kcjc"
+                    style="@style/wmd"
+                    android:background="#fff"
+                    android:drawableTop="@drawable/b3"
+                    android:text="快餐简餐" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mo"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                style="@style/mm"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/tdyp"
+                    style="@style/wmd"
+                    android:layout_marginRight="1dp"
+                    android:background="#fff"
+                    android:checked="true"
+                    android:drawableTop="@drawable/b4"
+                    android:text="甜点饮品" />
+
+                <RadioButton
+                    android:id="@+id/xgg"
+                    style="@style/wmd"
+                    android:layout_marginRight="1dp"
+                    android:background="#fff"
+                    android:drawableTop="@drawable/b5"
+                    android:text="鲜果购" />
+
+                <RadioButton
+                    android:id="@+id/czxc"
+                    style="@style/wmd"
+                    android:background="#fff"
+                    android:drawableTop="@drawable/b6"
+                    android:text="馋嘴小吃" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/mo"
+        android:layout_weight="9"
+        android:background="#fff"
+        android:orientation="vertical" >
+        <ListView
+            android:id="@+id/waimai_main_listview"
+            style="@style/mw"
+             >
+        </ListView>
+
+        <TextView
+            android:id="@+id/emptyview"
+            style="@style/ww"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+        <ProgressBar
+            style="@style/ww"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            style="@style/mw"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="正在加载..."
+            android:textColor="#7706c1ad"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

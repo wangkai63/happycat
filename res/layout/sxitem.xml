@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        android:layout_weight="2.5" >
+
+        <ImageView
+            android:id="@+id/ssgimg"
+            style="@style/ww"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/om"
+        android:layout_weight="7"
+        android:orientation="vertical" >
+
+        <RelativeLayout style="@style/mm" >
+
+            <TextView
+                android:id="@+id/ssmname"
+                style="@style/ww"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ssgname"
+                style="@style/ss"
+                android:layout_below="@id/ssmname"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ff9966"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/sslongtime"
+                style="@style/ss"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/ssmname"
+                android:textColor="#999"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/ssgtext"
+                style="@style/ss"
+                android:layout_below="@id/ssmname"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/ssgname"
+                android:textColor="#999"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/ssmaddress"
+                style="@style/ss"
+                android:layout_below="@id/ssgname"
+                android:layout_marginLeft="5dp"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

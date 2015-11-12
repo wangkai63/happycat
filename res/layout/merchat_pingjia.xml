@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm"
+    android:orientation="vertical" >
+
+    <ListView
+    	android:id="@+id/pjlistview"
+    	style="@style/mw"
+    	  android:divider="#3306c1ad"
+        android:dividerHeight="1dp"
+    	android:layout_width="match_parent" >
+    </ListView>
+
+</LinearLayout>

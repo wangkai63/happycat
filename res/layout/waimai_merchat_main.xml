@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/mo"
+        android:layout_weight="1.2" >
+
+        <RelativeLayout
+            style="@style/mm"
+            android:background="#06c1ad" >
+
+            <ImageButton
+                android:id="@+id/photo"
+                style="@style/ww"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:src="@drawable/left" />
+
+            <TextView
+                style="@style/ww"
+                android:layout_centerInParent="true"
+                android:text="夜猫外卖"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/mo"
+        android:layout_weight="14"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/marchet_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/aaa">
+        </ListView>
+        
+        
+          <ProgressBar
+            style="@style/ww"
+            android:layout_marginTop="150dp"
+            android:layout_gravity="center"
+          />
+
+        <TextView
+            style="@style/mw"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="网络不给力..."
+            android:layout_marginTop="50dp"
+            android:textColor="#7706c1ad"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

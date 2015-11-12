@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        style="@style/mm"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical" >
+
+       <RelativeLayout
+            android:id="@+id/user_nickname"
+            style="@style/user_info_menu_rl"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_user_nickname"
+                style="@style/user_info_menu_tv"
+                android:text="昵称：" />
+            <EditText
+                android:id="@+id/et_user_nickname"
+                style="@style/mm"
+                android:layout_toRightOf="@id/tv_user_nickname"
+                android:hint="最少2个，最多8个字符"
+                />
+
+        </RelativeLayout>
+       
+       <RelativeLayout
+            android:id="@+id/user_xiugaigender"
+            style="@style/user_info_menu_rl"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_user_xiugaigender"
+                style="@style/user_info_menu_tv"
+                android:text="性别：" />
+       <RadioGroup 
+           android:id="@+id/user_RGgender"
+           style="@style/ww"
+           android:orientation="horizontal"
+           android:layout_toRightOf="@id/tv_user_xiugaigender">
+            <RadioButton
+                android:id="@+id/user_gendernan"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:checked="true"
+                android:layout_marginLeft="30dp"
+                android:text="男" 
+               
+                android:textColor="#555555"/>
+            <RadioButton
+                android:id="@+id/user_gendernv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:text="女 " 
+                android:textColor="#555555"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+       <RelativeLayout
+            android:id="@+id/user_xiugaiaddress1"
+            style="@style/user_info_menu_rl"
+            android:layout_marginTop="10dp" >
+
+       <TextView
+                android:id="@+id/tv_user_xiugaiprovince"
+                style="@style/user_info_menu_tv"
+                android:text="省份：" />
+        <Spinner
+        android:id="@+id/user_xiugais1"
+        style="@style/mm"
+      
+        android:spinnerMode="dialog"
+        android:prompt="@string/prompt"
+        android:layout_toRightOf="@id/tv_user_xiugaiprovince"/>   
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/user_xiugaiaddress2"
+            style="@style/user_info_menu_rl"
+            android:layout_marginTop="10dp" >
+
+       <TextView
+                android:id="@+id/tv_user_xiugaicity"
+                style="@style/user_info_menu_tv"
+                android:text="城市：" />
+        <Spinner
+        android:id="@+id/user_xiugais2"
+        style="@style/mm"
+ 
+        android:spinnerMode="dialog"
+        android:prompt="@string/prompt"
+        android:layout_toRightOf="@id/tv_user_xiugaicity"/>   
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/user_xiugaiaddress3"
+            style="@style/user_info_menu_rl"
+            android:layout_marginTop="10dp" >
+
+       <TextView
+                android:id="@+id/tv_user_xiugaidistrict"
+                style="@style/user_info_menu_tv"
+                android:text="地区：" />
+        <Spinner
+        android:id="@+id/user_xiugais3"
+        style="@style/mm"
+    
+        android:spinnerMode="dialog"
+        android:prompt="@string/prompt"
+        android:layout_toRightOf="@id/tv_user_xiugaidistrict"/>   
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/user_xiugaidetail"
+            style="@style/user_info_menu_rl"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_user_xiugaidetail"
+                style="@style/user_info_menu_tv"
+                android:text="地址：" />
+            <EditText
+                android:id="@+id/et_user_xiugaidetail"
+                style="@style/mm"
+                android:layout_toRightOf="@id/tv_user_xiugaidetail"
+                android:hint="最少2个，最多60个字符"
+                />
+
+        </RelativeLayout>
+        
+        
+</LinearLayout>
+</LinearLayout>

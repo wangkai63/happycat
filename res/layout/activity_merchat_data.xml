@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mm"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/mo"
+        android:layout_weight="1"
+        android:background="#06c1ad" >
+
+        <ImageButton
+            android:id="@+id/photo"
+            style="@style/ww"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/left" />
+
+        <TextView
+            android:id="@+id/Djbt"
+            style="@style/mm"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="商家详情"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/mo"
+        android:id="@+id/tiaoxx"
+        android:layout_marginTop="3dp"
+        android:layout_weight="2"
+        android:background="#fff"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            style="@style/om"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2.5"
+            android:gravity="center" >
+
+            <!-- style="@style/mm" -->
+
+            <ImageView
+                android:id="@+id/logo"
+                style="@style/mm" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/om"
+            android:layout_weight="7"
+            android:orientation="vertical" >
+
+            <RelativeLayout style="@style/mm" >
+
+                <TextView
+                    android:id="@+id/pjsu"
+                    style="@style/mw"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/psf"
+                    style="@style/ww"
+                    android:layout_below="@id/pjsu"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="#666"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/qsf"
+                    style="@style/ww"
+                    android:layout_below="@id/pjsu"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/psf"
+                    android:textColor="#666"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    style="@style/ww"
+                    android:layout_below="@id/psf"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/mo"
+          android:id="@+id/moren"
+       
+        android:layout_marginTop="2dp"
+        android:layout_weight="9"
+        android:orientation="vertical" >
+
+        
+        
+          <RadioGroup
+            android:id="@+id/top1"
+            style="@style/mw"
+           
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/dingcan1"
+                style="@style/bottomtab"
+                 android:background="#fff"
+                android:checked="true"
+                android:text="订餐" 
+                 android:drawableBottom="@drawable/dingcan"
+               />
+
+            <RadioButton
+                android:id="@+id/pingjia1"
+                style="@style/bottomtab"
+                android:layout_marginLeft="2dp"
+                 android:background="#fff"
+                android:text="评价"
+                 android:drawableBottom="@drawable/dingcan" />
+        </RadioGroup>
+    
+        <android.support.v4.view.ViewPager
+            android:id="@+id/merchat_viewpager"
+            style="@style/mm" >
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+</LinearLayout>

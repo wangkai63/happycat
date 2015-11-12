@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mm"
+    tools:context=".MainActivity" >
+
+    <!-- 底部导航栏 -->
+    <RadioGroup 
+        android:id="@+id/bottomtab"
+          style="@style/mw"
+        android:orientation="horizontal"
+        android:background="#e4e4e4"
+        android:layout_alignParentBottom="true">
+        
+        <RadioButton 
+            android:id="@+id/shouye"
+            style="@style/bottomtab"
+            android:text="首页"
+            android:checked="true"
+            android:drawableTop="@drawable/shouyeselector"
+          
+            />
+        <RadioButton 
+            android:id="@+id/waimai"
+            style="@style/bottomtab"
+            android:text="外卖"
+            android:drawableTop="@drawable/waimaiselector"
+          />
+        <RadioButton 
+            android:id="@+id/xiaoxi"
+            style="@style/bottomtab"
+            android:text="咨询"
+             android:drawableTop="@drawable/xiaoxiselector"
+            
+          />
+        <RadioButton 
+            android:id="@+id/wode"
+            style="@style/bottomtab"
+            android:text="我的"
+            android:drawableTop="@drawable/wodeselector"
+           />
+        
+    </RadioGroup>
+    
+    <!-- 一般情况下，用fragment替换的布局都是framelayout -->
+	<FrameLayout 
+	    android:id="@+id/container"
+	    style="@style/mm"
+	    android:layout_above="@id/bottomtab"></FrameLayout>
+
+</RelativeLayout>

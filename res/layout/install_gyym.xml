@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+    <TextView
+        android:id="@+id/gyym_zhong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/banben"
+        android:gravity="center"
+        android:text="版本v5.2"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/gyym_shang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gyym_zhong"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/banbenym" />
+    <TextView
+        android:id="@+id/gyym_xia"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/gyym_zhong"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="我们用最真诚的服务，最方便的购物流程，设计出人性化的产品，给您的生活极大的便利!"
+        />
+
+</RelativeLayout>

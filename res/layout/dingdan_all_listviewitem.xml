@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mm"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/mw"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/dd_mname"
+            style="@style/ww"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:text="订单名称"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/dd_istatus"
+            style="@style/ww"
+             android:layout_marginTop="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="订单状态"
+            android:textColor="#009966"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tiaoxx"
+        style="@style/mw"
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            style="@style/ow"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3" >
+
+            <ImageView
+                android:id="@+id/dd_gimg"
+                style="@style/mw" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ow"
+            android:layout_weight="7" >
+
+            <RelativeLayout style="@style/ww" >
+
+                <TextView
+                    android:id="@+id/dd_gname"
+                    style="@style/ww"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="商品名称"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dd_sumprice"
+                    style="@style/ww"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="总价"
+                    android:textColor="#6644ff" />
+
+                <TextView
+                    android:id="@+id/dd_phone"
+                    style="@style/ww"
+                    android:layout_below="@id/dd_gname"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="联系电话"
+                    android:textColor="#666"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/dd_number"
+                    style="@style/ww"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/dd_gname"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="总价"
+                    android:textColor="#6644ff" />
+
+                <TextView
+                    android:id="@+id/dd_identifier"
+                    style="@style/ww"
+                    android:layout_below="@id/dd_phone"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="订单编号"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/dd_fs"
+                    style="@style/ww"
+                   android:textColor="#ff6600"
+                    android:layout_below="@id/dd_identifier"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="4dp"
+                    android:text="付款方式"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

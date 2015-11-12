@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_content_background_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/mw"
+       
+        android:orientation="horizontal"
+        android:padding="10dp" 
+        android:background="#2206c1ad">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/my_img"
+            android:src="@drawable/wallet_user_balance" />
+
+        <LinearLayout
+            style="@style/ww"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/ww"
+                android:text="当前余额："
+                android:textSize="15dp"
+                android:textColor="#666" />
+
+            <TextView
+                android:id="@+id/my_ye"
+                style="@style/ww"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:textColor="#ff6600"
+                android:text="亲，您还没登陆哦" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wallet_balance_info"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="113dp"
+                android:src="@drawable/you1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/mw"
+        android:background="@drawable/wallet_recharge_bg"
+        android:padding="2dp" >
+
+        <LinearLayout
+            android:id="@+id/wallet_recharge"
+            style="@style/wallet_linearLayout" >
+
+            <ImageView
+                style="@style/ww"
+                android:src="@drawable/wallet_mony_in" />
+
+            <TextView
+                style="@style/ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="充值" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_gray" />
+
+        <LinearLayout
+            android:id="@+id/wallet_taken"
+            style="@style/wallet_linearLayout" >
+
+            <ImageView
+                style="@style/ww"
+                android:src="@drawable/wallet_mony_out" />
+
+            <TextView
+                style="@style/ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="提现" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

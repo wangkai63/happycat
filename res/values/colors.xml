@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="white">#ffffff</color>
+    <color name="gray">#f0f0f0</color>
+    <color name="black">#ff000000</color>
+    <color name="gray_veryLight">#ff8d8d8d</color>
+    <color name="gray_light">#ff999999</color>
+    <color name="gray_dark">#ff6c6c6c</color>
+    <color name="blue">#ff5baaec</color>
+    <color name="red">#ffff5000</color>
+    <color name="yellow">#ffff7e00</color>
+    <color name="purple">#ffe20079</color>
+    <color name="purple_dark">#ff713678</color>
+    <color name="orange">#ffff6c00</color>
+    <color name="green">#ff2bad13</color>
+    <color name="background">#fff8f8f8</color>
+     <color name="line_gray">#ffc1c1c1</color>
+     <color name="f0f0f0">#f0f0f0</color>
+     <color name="app_content_background_color">#fff8f8f8</color>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/mo"
+        android:layout_marginTop="2dp"
+        android:layout_weight="8"
+        android:background="#f2f2f2" >
+
+        <LinearLayout
+            style="@style/om"
+            android:layout_marginRight="2dp"
+            android:layout_weight="3" >
+
+            <ListView
+                android:id="@+id/dc_fenlielistview"
+                style="@style/ww"
+                android:background="#fff"
+                android:listSelector="#3306c1ad" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/om"
+            android:layout_weight="7"
+            android:background="#e4e4e4" >
+
+            <ListView
+                android:id="@+id/dc_goodslistview"
+                style="@style/ww"
+                android:background="#e4e4e4"
+                android:divider="#3306c1ad"
+                android:dividerHeight="1dp" >
+            </ListView>
+        </LinearLayout>
+        <!-- </LinearLayout> -->
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/mo"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1.1"
+        android:background="#77e4e4e4"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/shopp_cat"
+            style="@style/om"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/shopp1" />
+
+        <TextView
+            android:id="@+id/buycat_jine"
+            style="@style/om"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0元"
+            android:textColor="#666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/buycat_chae"
+            style="@style/om"
+            android:layout_marginRight="7dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textColor="#06c1ad"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/buycat_tijiao"
+            style="@style/om"
+            android:layout_marginRight="7dp"
+            android:layout_weight="2"
+            android:background="@drawable/aaa"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="#ff6600"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

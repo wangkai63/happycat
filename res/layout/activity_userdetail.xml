@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.happucat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/mm"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical" >
+
+       <RelativeLayout
+            android:id="@+id/user_touxiang"
+            style="@style/user_info_menu_rl"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_user_touxiang"
+                style="@style/user_info_menu_tv"
+                android:text="头像" />
+
+            <image.SmartImageView
+                android:id="@+id/img_user_touxiang"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+               android:layout_centerVertical="true" 
+                android:layout_marginLeft="200dp"
+                android:layout_toRightOf="@id/tv_user_touxiang"
+                android:src="@drawable/touxiang"
+                app:border_color="#eeeeee"
+                app:border_width="2dp" />
+
+            <View style="@style/user_info_menu_line_long" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_username"
+            style="@style/user_info_menu_rl"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/user_info_menu_tv"
+                android:text="昵称" />
+
+
+            <TextView
+                android:id="@+id/tv_user_namevalue"
+                style="@style/ww"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="250dp"
+                />
+
+            <View style="@style/user_info_menu_line_long" />
+        </RelativeLayout>
+        
+       <RelativeLayout
+            android:id="@+id/rl_uphone"
+            style="@style/user_info_menu_rl" >
+
+            <TextView
+                android:id="@+id/tv_uphone"
+                style="@style/user_info_menu_tv"
+                android:text="账号" />
+
+
+            <TextView
+                android:id="@+id/tv_uphonevalue"
+                style="@style/ww"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="225dp"
+                 />
+
+            <View style="@style/user_info_menu_line_long" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_gender"
+            style="@style/user_info_menu_rl" >
+
+            <TextView
+                android:id="@+id/tv_gender"
+                style="@style/user_info_menu_tv"
+                android:text="性别" />
+
+            <TextView
+                android:id="@+id/tv_gendervalue"
+                style="@style/ww"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="270dp"
+                />
+             <View style="@style/user_info_menu_line_long" />   
+        </RelativeLayout>
+        
+        
+        <RelativeLayout
+            android:id="@+id/rl_address"
+            style="@style/user_info_menu_rl" >
+<LinearLayout 
+    style="@style/ow" 
+    
+    ></LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/user_info_menu_tv"
+                android:text="地址" />
+             <View style="@style/user_info_menu_line_long" />
+             
+             <TextView
+                 android:id="@+id/user_address"
+                 style="@style/ww"
+                 android:layout_marginLeft="130dp"
+                 android:layout_centerVertical="true"
+                 />
+
+             <!-- <TextView
+                 android:id="@+id/tv_city"
+                 style="@style/ww"
+                 android:layout_marginLeft="175dp"
+                 android:layout_centerVertical="true"
+                 android:text="石家庄市" />
+
+             <TextView
+                 android:id="@+id/tv_district"
+                 style="@style/ww"
+                 android:layout_marginLeft="225dp"
+                 android:layout_centerVertical="true"
+                 android:text="老城区" />
+
+             <TextView
+                 android:id="@+id/tv_detail"
+                 style="@style/ww"
+                 android:layout_marginLeft="270dp"
+                 android:layout_centerVertical="true"
+                 android:singleLine="true"
+                 android:width="120dp"
+                 android:text="仁爱路一号" 
+                 /> -->
+   
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rl_password_xiugai"
+            style="@style/user_info_menu_rl" >
+
+             <View style="@style/user_info_menu_line_long" />
+             
+             <TextView
+                 android:id="@+id/tv_password_xiugai"
+                 style="@style/user_info_menu_tv"
+                 android:text="密码管理" 
+                 />
+             
+             <ImageView
+                    style="@style/menu_my_jiantou"
+                    android:src="@drawable/you1" />
+             
+        </RelativeLayout>
+        <Button
+            android:id="@+id/user_xiugaibutton"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="修改个人资料"
+            android:textColor="#ffffff"
+            android:background="#06c1ad"
+            />
+        
+    </LinearLayout>
+
+</LinearLayout>

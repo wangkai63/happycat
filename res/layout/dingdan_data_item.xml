@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="horizontal" 
+	>
+	
+	<TextView 
+		android:id="@+id/dingdan_goodsname"
+		android:layout_marginLeft="10dp"
+		android:layout_width="0dp"
+		android:layout_height="35dp"
+		android:layout_weight="2"
+		android:text="苏小果"
+		android:textSize="15dp"
+		/>
+	<TextView 
+		android:id="@+id/dingdan_goodsnumer"
+		android:layout_width="0dp"
+		android:layout_height="35dp"
+		android:layout_weight="1"
+		android:text="数量 x4"
+		android:textSize="15dp"
+		/>
+	<TextView 
+		android:id="@+id/diangdan_money"
+		android:layout_width="0dp"
+		android:layout_height="35dp"
+		android:layout_weight="1"
+		android:text="32元"
+		android:textSize="15dp"
+		/>
+	
+	
+
+</LinearLayout>

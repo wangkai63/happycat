@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_content_background_color"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/oder_all_page_listview"
+        style="@style/mw"
+        
+        android:divider="#5506c1ad"
+        android:dividerHeight="1dp"
+        
+       >
+    </ListView>
+
+<!--     改变Listview之间的距离
+  android:divider="#00000000"
+        android:dividerHeight="10dp" -->
+</LinearLayout>

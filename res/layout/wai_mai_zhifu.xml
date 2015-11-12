@@ -1,0 +1,179 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+		android:background="#f2f2f2"
+	android:orientation="vertical"
+      >
+  <LinearLayout
+        style="@style/mo"
+        android:layout_weight="1.2"
+        android:background="#06c1ad" >
+
+        <TextView
+    	android:id="@+id/sucess"
+    	style="@style/mm"
+    	android:text="确定支付"
+    	android:gravity="center"
+    	android:textColor="#fff"
+    	android:textSize="20sp" />
+    </LinearLayout>
+  
+
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1.5"
+    	android:background="#e4e4e4"
+    	android:orientation="horizontal" >
+
+    	<Button
+    		android:id="@+id/fanhu"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_gravity="center"
+    		android:background="@null"
+    		android:text="单击返回首页"
+    		android:textColor="#06c1ad"
+    		android:textSize="15sp" />
+    </LinearLayout>
+
+		<LinearLayout 
+			
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="10"
+			android:layout_marginTop="3dp"
+			android:background="#fff"
+			android:orientation="vertical">
+			<TextView 
+				android:id="@+id/name"
+				android:layout_marginLeft="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				android:text="订单名称:"
+				/>
+			<TextView 
+				android:id="@+id/numer"
+				android:layout_marginLeft="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				android:text="订单编号:"
+				/>
+				
+			<TextView 
+				android:id="@+id/type"
+				android:layout_marginLeft="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="0dp"
+				android:layout_weight="1"                                                                     
+				android:text="支付方式:"
+				/>
+			
+			<TextView 
+				android:id="@+id/phone"
+				android:layout_marginLeft="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="0dp"
+				android:layout_weight="1"                                                                     
+				android:text="订单电话"
+				/>
+			<LinearLayout 
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				android:orientation="horizontal">
+			<TextView 
+				android:id="@+id/money"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"                                                                     
+				android:text="应付金额"
+						android:layout_marginLeft="10dp"
+				
+				/>
+
+			<Button
+				android:id="@+id/user_qianbao"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:background="@null"
+				android:gravity="center"
+				android:text="我的钱包"
+				android:textColor="#55ff0000"
+				 />
+
+			</LinearLayout>
+			<LinearLayout 
+		      
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="0.8"
+			android:orientation="horizontal">
+			<Button 
+				android:id="@+id/lianxi"
+				android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="确定订单"
+			android:gravity="center"
+			android:textColor="#ff6600" 
+			
+			android:background="@null"/>
+			<Button 
+				android:id="@+id/quxiao"
+				android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="取消订单"
+			android:textColor="#ff6600" 
+			android:gravity="center"
+			android:background="@null"/>
+			</LinearLayout>
+			
+		<LinearLayout 
+		      
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="2"
+			
+			android:orientation="vertical">
+		
+				<TextView 
+					android:layout_width="wrap_content"
+					android:layout_height="0dp"
+					android:layout_weight="1"
+					android:text="友情提示："
+					android:textColor="#9906c1ad"
+					android:gravity="center"/>
+				
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_weight="0.99"
+					android:gravity="center"
+					android:textColor="#99ff6600"
+					android:text="您的美食已在飞奔的路上,请耐心等候" />
+		
+			</LinearLayout>
+			
+		</LinearLayout>
+		
+		<LinearLayout 
+		      
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="2.5"
+			android:orientation="vertical">
+		
+		<ImageView 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:src="@drawable/yemao"
+			android:layout_gravity="center_horizontal"/>
+		</LinearLayout>
+	</LinearLayout>
+
+

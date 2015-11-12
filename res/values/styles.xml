@@ -1,0 +1,294 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+  <style name="white_light_14sp">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="white_light_16sp">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+<!--  个人资料列表relativelayout样式  中的短线 不到头 
+  --> 
+ <style name="user_info_menu_line">
+  <item name="android:layout_width">match_parent</item> 
+  <item name="android:layout_height">0.5dp</item> 
+  <item name="android:layout_alignParentBottom">true</item> 
+  <item name="android:layout_marginLeft">10dp</item> 
+  <item name="android:layout_marginRight">10dp</item> 
+  <item name="android:background">#eeeeee</item> 
+  </style>
+    
+    <style name="white_light_18sp">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="gray_dark_16sp">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff6c6c6c</item>
+    </style>
+
+    <style name="gray_dark_14sp">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff6c6c6c</item>
+    </style>
+
+    <style name="gray_light_12sp">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff999999</item>
+    </style>
+
+    <style name="gray_light_16sp">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff999999</item>
+    </style>
+
+    <style name="yellow_16sp">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffffda44</item>
+    </style>
+
+    <style name="black_20sp">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="black_12sp">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="orange_12sp">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ffff7802</item>
+    </style>
+
+    <style name="red_20sp">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffe41f11</item>
+    </style>
+
+    <style name="black_16sp">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="black_18sp">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="black_14sp">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="action_bar_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+        <style name="action_bar_whb">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#06c1ad</item>
+    </style>
+    
+     <!-- 底部导航栏选项卡公有的属性 -->
+    <style name="bottomtab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textcolor</item>
+    </style>
+    <!-- 宽高填满父布局 -->
+    <style name="mm">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!-- 宽高自适应 -->
+    <style name="ww">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+  <!--   //搜索界面 -->
+      <style name="ss">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+          
+        <item name="android:layout_marginTop">4dp</item>
+         
+     
+        
+    </style>
+    <!-- 宽填满父布局，高自适应 -->
+    <style name="mw">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+ <style name="mo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <style name="om">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ow">
+         <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="texta">
+         <item name="android:gravity">center</item>
+        <item name="android:textColor">#ff6600</item>
+         <item name="android:textStyle">bold</item>
+           <item name="android:ellipsize">end</item>
+         <item name="android:singleLine">true</item>
+         <item name="android:layout_marginTop">3dp</item>
+    
+    </style>
+    <style name="wmd">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+       
+    </style>
+      <!-- 我的  里面每一行中布局的样式 -->
+    <style name="menu_my_hang">
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <!-- 我的  里面的菜单图标样式 -->
+    <style name="menu_my_tubiao">
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <!-- 我的  里面的文字样式 -->
+    <style name="menu_my_wenzi">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+
+    <!-- 我的  里面的后面的箭头图标样式 -->
+    <style name="menu_my_jiantou">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@drawable/you1</item>
+    </style>
+    <!--  将夜猫分享给我的好友的图片样式 
+  --> 
+ <style name="share_wh">
+  <item name="android:layout_width">120dp</item> 
+  <item name="android:layout_height">120dp</item> 
+  </style>
+    <!--  个人设置列表relativelayout样式 
+  --> 
+ <style name="user_installall">
+  <item name="android:layout_height">45dp</item> 
+  <item name="android:layout_width">match_parent</item> 
+  <item name="android:background">@drawable/menu_child_option_bg</item> 
+  <item name="android:clickable">true</item> 
+  </style>
+ 
+      <!-- 个人资料列表relativelayout样式 -->
+    <style name="user_info_menu_rl">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/menu_child_option_bg</item>
+        <item name="android:clickable">true</item>
+    </style>
+     <!-- 个人资料列表relativelayout样式  中的长线 到头 -->
+    <style name="user_info_menu_line_long">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#eeeeee</item>
+    </style>
+ 
+        <!-- 个人资料  里面的文字样式 -->
+    <style name="user_info_menu_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#555555</item>
+    </style>
+    
+       <!-- 头像选择框   弹出框 -->
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+    </style>
+    
+     <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+     <!-- 收藏 -->
+     <style name="collection_list">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@drawable/order_tab_textcolor</item>
+    </style>
+    <!-- 收藏中横线 -->
+    <style name="order_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#dddddd</item>
+    </style>
+        <!-- collection长竖线 -->
+    <style name="collection_line">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#dddddd</item>
+    </style>
+    
+      <!-- 钱包充值提现 -->
+    <style name="wallet_linearLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+     
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm"
+    android:background="#55cccccc"
+    android:orientation="vertical" >
+
+    <!-- 顶部的标题栏 -->
+
+    <RelativeLayout
+        style="@style/mo"
+        android:layout_weight="1.2"
+        android:background="#06c1ad" >
+
+        <ImageButton
+            android:id="@+id/photo"
+            style="@style/ww"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp"
+            android:src="@drawable/left" />
+
+        <TextView
+            style="@style/ww"
+            android:layout_centerInParent="true"
+            android:text="送餐地址"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/shuaxin"
+            style="@style/ww"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/freshen1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/mo"
+        android:layout_weight="14"
+        android:orientation="vertical" >
+
+        <ListView
+            style="@style/mo"
+            android:layout_weight="12.8" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/wode_dz"
+            style="@style/mo"
+            android:layout_weight="1.2"
+            android:background="#06c1ad" >
+
+            <ImageView
+                android:id="@+id/wd_dizhi"
+                style="@style/ww"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="120dp"
+                android:src="@drawable/dzadd" />
+
+            <TextView
+                style="@style/ww"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/wd_dizhi"
+                android:text="添加地址" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

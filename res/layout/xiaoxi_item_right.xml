@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView 
+        android:id="@+id/xiaoxi_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        />
+    <ImageButton 
+         android:id="@+id/img_right"
+         android:layout_alignParentRight="true"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:layout_below="@id/xiaoxi_time"
+         android:padding="10dp"
+         android:src="@drawable/robot"
+         />
+
+     <TextView 
+         android:id="@+id/tv"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="50dp"
+         android:layout_below="@id/xiaoxi_time"
+         android:layout_toLeftOf="@id/img_right"
+         android:background="@drawable/message_right"
+         android:gravity="center"
+         />
+
+</RelativeLayout>

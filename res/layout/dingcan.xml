@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pingjiazong"
+    style="@style/mm"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/mo"
+        android:layout_marginTop="2dp"
+        android:layout_weight="8" >
+
+        <ListView
+            android:id="@+id/dcleft"
+            style="@style/ow"
+            android:layout_marginRight="2dp"
+            android:layout_weight="3"
+            android:background="#fff" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/dcright"
+            style="@style/ow"
+            android:layout_weight="7"
+            android:background="#fff" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/mo"
+        android:layout_weight="1.1"
+        android:background="#77e4e4e4"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/om"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/shopp1" />
+
+        <TextView
+            style="@style/om"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0元"
+            android:textColor="#666"
+            android:textSize="15sp" />
+
+        <TextView
+            style="@style/om"
+            android:layout_marginRight="2dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="还差25元"
+            android:textColor="#06c1ad"
+            android:textSize="15sp" />
+
+        <Button
+            style="@style/om"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="#666"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

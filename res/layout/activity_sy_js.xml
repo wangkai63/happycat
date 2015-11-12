@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm"
+    android:orientation="vertical"
+    android:background="#f2f2f2" >
+
+    <ScrollView
+        style="@style/mw"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            style="@style/mw"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#06c1ad" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:onClick="searchfh"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp"
+                    android:src="@drawable/left" />
+
+                <com.happycat.util.SearchClearEditText
+                    android:id="@+id/etext"
+                    style="@drawable/editsharp"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="6"
+                    android:background="@drawable/editsharp"
+                    android:ellipsize="end"
+                    android:hint="  输入商品或商店名称"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:textSize="14sp" >
+                </com.happycat.util.SearchClearEditText>
+
+                <Button
+                    style="@style/ow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:onClick="sousuo"
+                    android:text="搜索" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        style="@style/mo"
+        android:layout_weight="11"
+        android:orientation="vertical" >
+
+        <com.happycat.util.RefreshListView
+            android:id="@+id/sou"
+            style="@style/mw"
+            android:background="@drawable/aaa"
+            android:divider="#3306c1ad"
+            android:dividerHeight="1dp" >
+
+        </com.happycat.util.RefreshListView>
+        
+      <!--         <ProgressBar
+            style="@style/ww"
+            android:layout_gravity="center"
+          />
+
+        <TextView
+            style="@style/mw"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="正在加载..."
+            android:textColor="#7706c1ad"
+            android:textSize="20sp" /> -->
+
+      
+       <!--  <TextView
+            style="@style/mm"
+            android:gravity="center"
+            android:text="加载更多..."
+            android:textColor="#666" /> -->
+    </LinearLayout>
+ 
+    
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+        <TextView
+        android:id="@+id/xiangright"
+        style="@style/mw"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        style="@style/mw"
+        android:layout_below="@id/xiangright"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/rprice"
+            style="@style/ow"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="4"
+            android:textColor="#666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/rnumber"
+            style="@style/ow"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="4"
+            android:textColor="#666"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/jian"
+            style="@style/ow"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="2"
+            android:src="@drawable/subtract" />
+
+        <TextView
+            android:id="@+id/gshu"
+            style="@style/ow"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+
+            android:textColor="#ff0000"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/jiaright"
+            style="@style/ow"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:src="@drawable/add" />
+    </LinearLayout>
+<!-- 
+    <TextView
+        android:id="@+id/xiangright"
+        style="@style/mw"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/rprice"
+        style="@style/ww"
+        android:layout_below="@id/xiangright"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" 
+        android:textColor="#666"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/rnumber"
+        style="@style/ww"
+        android:layout_below="@id/xiangright"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/rprice"
+        android:textColor="#666"
+        android:textSize="11sp" />
+    <ImageButton 
+        style="@style/ww"
+        android:id="@+id/jiaright"
+         android:layout_below="@id/xiangright"       
+          android:background="@drawable/add"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="15dp"
+  
+        />
+      <ImageButton 
+        style="@style/ww"
+         android:layout_below="@id/xiangright"       
+          android:background="@drawable/subtract"
+          android:layout_toLeftOf="@id/jiaright"   
+          android:layout_marginRight="15dp"
+   
+        />
+ -->
+</RelativeLayout>

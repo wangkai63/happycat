@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/share_weibo"
+        style="@style/share_wh"
+        android:layout_centerInParent="true"
+        android:background="@drawable/yemao" />
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/share_weibo"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="50dp"
+        android:background="#8806c1ad"
+        android:gravity="center"
+        android:text="单击图片把夜猫分享给朋友"
+        android:textColor="#fff"
+        android:textSize="18dp" />
+
+</RelativeLayout>

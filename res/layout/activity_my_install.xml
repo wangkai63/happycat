@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/background">
+    <RelativeLayout
+            android:id="@+id/install_check"
+            style="@style/user_installall"
+            android:layout_marginTop="8dp" >
+    <View 
+        style="@style/user_info_menu_line_long" />
+    <View 
+        android:layout_alignParentBottom="true"
+        style="@style/user_info_menu_line_long" />
+            <TextView
+                android:id="@+id/install_checkleft"
+                style="@style/user_info_menu_tv"
+                android:text="检查更新" />
+
+            <TextView
+                android:id="@+id/install_checkright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="26dp"
+                android:text="v5.5" />
+
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/install_qctphc"
+            style="@style/user_installall"
+            android:layout_marginTop="8dp" >
+    <View 
+        style="@style/user_info_menu_line_long" />
+    <View 
+        android:layout_alignParentBottom="true"
+        style="@style/user_info_menu_line_long" />
+            <TextView
+                android:id="@+id/install_qctphcleft"
+                style="@style/user_info_menu_tv"
+                android:text="清除图片缓存" />
+
+            <TextView
+                android:id="@+id/install_qctphcright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="26dp"
+                android:text="0MB" />
+
+    </RelativeLayout>
+        <RelativeLayout
+
+            android:id="@+id/install_liuliang"
+            style="@style/user_installall"
+            android:layout_marginTop="8dp" >
+    <View 
+        style="@style/user_info_menu_line_long" />
+    <View 
+        android:layout_alignParentBottom="true"
+        style="@style/user_info_menu_line_long" />
+        <TextView
+                android:id="@+id/install_liuliangleft"
+                style="@style/user_info_menu_tv"
+                android:text="非wifi使用省流量模式" 
+                />
+        <ImageButton
+                android:id="@+id/install_liuliangright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:src="@drawable/yuan"
+                android:onClick="click1"
+                />
+    </RelativeLayout>
+    <RelativeLayout
+
+            android:id="@+id/install_dingwei"
+            style="@style/user_installall"
+            android:layout_marginTop="8dp" >
+    <View 
+        style="@style/user_info_menu_line_long" />
+    <View 
+        android:layout_alignParentBottom="true"
+        style="@style/user_info_menu_line_long" />
+        <TextView
+                android:id="@+id/install_dingweileft"
+                style="@style/user_info_menu_tv"
+                android:text="自动定位到当前位置" 
+                />
+        <ImageButton
+                android:id="@+id/install_dingweiright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:src="@drawable/yuan"
+                android:onClick="click2"
+                />
+    </RelativeLayout>
+    
+    <RelativeLayout
+            android:id="@+id/install_gyym"
+            style="@style/user_installall"
+            android:layout_marginTop="8dp" >
+    <View 
+        style="@style/user_info_menu_line_long" />
+    <View 
+        android:layout_alignParentBottom="true"
+        style="@style/user_info_menu_line_long" />
+
+          <TextView
+              android:id="@+id/install_gyymleft"
+              style="@style/user_info_menu_tv"
+              android:layout_alignParentLeft="true"
+              android:layout_centerVertical="true"
+              android:text="关于夜猫" />
+          
+     </RelativeLayout>
+     
+     <RelativeLayout
+            android:id="@+id/install_tcdl"
+            style="@style/user_installall"
+            android:layout_marginTop="8dp" >
+    <View 
+        style="@style/user_info_menu_line_long" />
+    <View 
+        android:layout_alignParentBottom="true"
+        style="@style/user_info_menu_line_long" />
+          <TextView
+                android:id="@+id/install_tcdlleft"
+                style="@style/user_info_menu_tv"
+                android:text="退出账号" />
+          
+     </RelativeLayout>
+</LinearLayout>

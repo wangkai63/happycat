@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="#fff">
+    
+    <FrameLayout 
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+        
+        <ImageView
+        android:id="@+id/refresh_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/refresh_down"/>
+
+        
+        <ProgressBar
+            android:id="@+id/pb_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/custom_progress"
+             android:visibility="invisible"/>
+        
+    </FrameLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"        
+        android:orientation="vertical">
+        
+        <TextView 
+            android:id="@+id/refresh_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下拉刷新"
+            android:textColor="#aaaaaa"
+            android:textSize="16sp"/>
+        
+          <TextView 
+              android:id="@+id/refresh_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最后刷新的时间2015-10-16 18:26:00"
+             android:textColor="@android:color/darker_gray"
+             android:layout_marginTop="5dp"
+            android:textSize="14sp"/>
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

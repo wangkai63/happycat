@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm"
+    android:background="#55cccccc"
+    android:orientation="vertical" >
+
+    <!-- 顶部的标题栏 -->
+
+    <RelativeLayout
+        style="@style/mo"
+        android:layout_weight="1.2"
+        android:background="#06c1ad" >
+
+        <TextView
+            style="@style/ww"
+            android:layout_centerInParent="true"
+            android:text="我的"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/mo"
+        android:layout_weight="14"
+        android:orientation="vertical" >
+
+        <!--
+             <LinearLayout
+            android:id="@+id/rl_login_register"
+            style="@style/mo"
+            android:layout_weight="3"
+            android:background="#06c1ad"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                style="@style/ow"
+                android:layout_weight="3" >
+
+                <ImageButton
+                    android:id="@+id/tixing"
+                    style="@style/ww"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/tx" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ow"
+                android:layout_weight="8"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/dlzc"
+                    style="@style/ww"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="登录/注册"
+                    android:textColor="#666"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/dlsex"
+                    style="@style/ww"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#88ff6600" />
+
+                <TextView
+                    android:id="@+id/dlzh"
+                    style="@style/ww"
+                    android:layout_marginLeft="8dp"
+                    android:text="登陆后可享受更多特权"
+                    android:textColor="#ccc" />
+
+                <ImageButton
+                    android:id="@+id/right_return"
+                    android:layout_width="12dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/right1" />
+            </LinearLayout>
+        </LinearLayout>
+        -->
+
+        <RelativeLayout
+            android:id="@+id/rl_login_register"
+            style="@style/mo"
+            android:layout_marginTop="1dp"
+            android:layout_weight="3"
+            android:background="#06c1ad" >
+
+            <ImageButton
+                android:id="@+id/tixing"
+               android:layout_width="55dp"
+               android:layout_height="55dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="42dp"
+                android:background="@drawable/tx"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/dlzc"
+                style="@style/ww"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/tixing"
+                android:text="登录/注册"
+                android:textColor="#666"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:id="@+id/dlsex"
+                style="@style/ww"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/dlzc"
+                />
+
+            <TextView
+                android:id="@+id/dlzh"
+                style="@style/ww"
+                android:layout_below="@id/dlzc"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tixing"
+                android:text="登陆后可享受更多特权"
+                android:textColor="#88ff6600" />
+
+            <ImageButton
+                android:id="@+id/right_return"
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/right1" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/mo"
+            android:layout_weight="9"
+            android:background="#5506c1ad"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/wode_sc"
+                style="@style/menu_my_hang"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/wd_shouchang"
+                    style="@style/menu_my_tubiao"
+                    android:src="@drawable/heart" />
+
+                <TextView
+                    style="@style/menu_my_wenzi"
+                    android:layout_toRightOf="@id/wd_shouchang"
+                    android:text="我的收藏" />
+
+                <ImageView
+                    style="@style/menu_my_jiantou"
+                    android:src="@drawable/you1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wode_qb"
+                style="@style/menu_my_hang"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/wd_qianbao"
+                    style="@style/menu_my_tubiao"
+                    android:src="@drawable/qb" />
+
+                <TextView
+                    style="@style/menu_my_wenzi"
+                    android:layout_toRightOf="@id/wd_qianbao"
+                    android:text="我的钱包" />
+
+                <ImageView
+                    style="@style/menu_my_jiantou"
+                    android:src="@drawable/you1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wode_dd"
+                style="@style/menu_my_hang"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/wd_dingdan"
+                    style="@style/menu_my_tubiao"
+                    android:src="@drawable/dd" />
+
+                <TextView
+                    style="@style/menu_my_wenzi"
+                    android:layout_toRightOf="@id/wd_dingdan"
+                    android:text="我的订单" />
+
+                <ImageView
+                    style="@style/menu_my_jiantou"
+                    android:src="@drawable/you1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wode_sz"
+                style="@style/menu_my_hang"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/wd_shezhi"
+                    style="@style/menu_my_tubiao"
+                    android:src="@drawable/sz" />
+
+                <TextView
+                    style="@style/menu_my_wenzi"
+                    android:layout_toRightOf="@id/wd_shezhi"
+                    android:text="我的设置" />
+
+                <ImageView
+                    style="@style/menu_my_jiantou"
+                    android:src="@drawable/you1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wode_zz"
+                style="@style/menu_my_hang"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/wd_ziliao"
+                    style="@style/menu_my_tubiao"
+                    android:src="@drawable/zl" />
+
+                <TextView
+                    style="@style/menu_my_wenzi"
+                    android:layout_toRightOf="@id/wd_ziliao"
+                    android:text="个人资料" />
+
+                <ImageView
+                    style="@style/menu_my_jiantou"
+                    android:src="@drawable/you1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wode_fx"
+                style="@style/menu_my_hang"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/wd_fenxiang"
+                    style="@style/menu_my_tubiao"
+                    android:src="@drawable/fx" />
+
+                <TextView
+                    style="@style/menu_my_wenzi"
+                    android:layout_toRightOf="@id/wd_fenxiang"
+                    android:text="好友分享" />
+
+                <ImageView
+                    style="@style/menu_my_jiantou"
+                    android:src="@drawable/you1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wode_dz"
+                style="@style/menu_my_hang"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/wd_fenxiang"
+                    style="@style/menu_my_tubiao"
+                    android:src="@drawable/address" />
+
+                <TextView
+                    style="@style/menu_my_wenzi"
+                    android:layout_toRightOf="@id/wd_fenxiang"
+                    android:text="收货地址" />
+
+                <ImageView
+                    style="@style/menu_my_jiantou"
+                    android:src="@drawable/you1" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mo"
+            android:layout_marginTop="1dp"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

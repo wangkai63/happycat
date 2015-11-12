@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <!-- 顶部的标题栏 -->
+
+    <ScrollView
+        style="@style/mo"
+            android:layout_weight="1.2"
+             android:background="#06c1ad"
+        android:fadingEdge="none" >
+
+        
+
+            <RelativeLayout
+                style="@style/mm"
+                android:background="#06c1ad" >
+
+             <!--    <ImageButton
+                    android:id="@+id/photo"
+                    style="@style/ww"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/left" />
+ -->
+                <TextView
+                    style="@style/ww"
+                    android:layout_centerInParent="true"
+                    android:text="消息"
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+      
+    </ScrollView>
+    <!-- android:divider="#0000"表示listview分割线的颜色为透明色 -->
+
+    <LinearLayout
+        style="@style/mo"
+        android:layout_weight="14"
+        android:background="@drawable/aaa"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/xiaoxi_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:transcriptMode="alwaysScroll" >
+        </ListView>
+
+        <LinearLayout style="@style/mw" >
+
+            <EditText
+                android:id="@+id/xiaoxi_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="输入你想说的话"
+                android:maxLines="2" />
+
+            <Button
+                android:id="@+id/xiaoxi_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xiaoxi_button" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        style="@style/om"
+        android:layout_weight="3"
+        android:layout_marginLeft="15dp" >
+
+        <ImageView
+            android:id="@+id/logo"
+            style="@style/mm" 
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/om"
+        android:layout_margin="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="7"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/ww"
+          
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/qisongjia"
+            style="@style/ww"
+         
+            android:textColor="#666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/peisongfei"
+            style="@style/ww"
+          
+            android:textColor="#666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/ww"
+      
+           
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

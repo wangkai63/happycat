@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_content_background_color"
+    android:orientation="vertical" >
+
+  
+    <RadioGroup
+        android:id="@+id/dd_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e4e4e4"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/order_all"
+            style="@style/collection_list"
+            android:button="@null"
+            android:checked="true"
+            android:text="全部"
+           android:drawableBottom="@drawable/dingdan"
+            android:textColor="@color/textcolor" />
+
+        <View style="@style/collection_line" />
+
+        <RadioButton
+            android:id="@+id/order_nofukuan"
+            style="@style/collection_list"
+            android:button="@null"
+            android:text="待支付"
+            android:textColor="@color/textcolor" 
+            android:drawableBottom="@drawable/dingdan"/>
+
+        <View style="@style/collection_line" />
+
+        <RadioButton
+            android:id="@+id/order_noxiaofei"
+            style="@style/collection_list"
+            android:button="@null"
+            android:text="已评价"
+            android:drawableBottom="@drawable/dingdan"
+            android:textColor="@color/textcolor" />
+
+        <View style="@style/collection_line" />
+
+        <RadioButton
+            android:id="@+id/order_daipingjia"
+            style="@style/collection_list"
+            android:button="@null"
+            android:text="待评价"
+            android:drawableBottom="@drawable/dingdan"
+            android:textColor="@color/textcolor" />
+    </RadioGroup>
+
+    <View style="@style/order_line" />
+
+   <android.support.v4.view.ViewPager
+        android:id="@+id/order_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:flipInterval="30"      
+        android:persistentDrawingCache="animation" >
+       
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
